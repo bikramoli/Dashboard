@@ -4,8 +4,7 @@ import Sidebar from "../components/ui/sidebar/Sidebar";
 const Dashboard = () => {
   return (
     <>
-      <Navbar/>
-      <Sidebar />
+      <h1>Dashboard</h1>
     </>
   );
 };
