@@ -1,3 +1,4 @@
+import SearchBox from "../../form/searchBox/SearchBox";
 import Table from "../table/Table";
 
 const columns = [
@@ -28,8 +29,8 @@ const SubscriberDetail = () => {
   );
   return (
     <>
-      <div class="">
-        <h1>filter sections here</h1>
+      <div class="filters">
+        <SearchBox />
       </div>
       <div>
         <Table data={data} columns={columns} />
