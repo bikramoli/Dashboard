@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "../../../assets/svgs/logo.svg";
+import { sideBarItem } from "./SidebarItems";
 
 const Sidebar = () => {
   return (
@@ -11,18 +13,12 @@ const Sidebar = () => {
       </div>
 
       <div className="sidebar__menu">
-        <div className="sidebar__link active_menu_link">
-          <img src={logo} alt="logo" />
-          <a href="/">Dashboard</a>
-        </div>
-        <div className="sidebar__link">
-          <img src={logo} alt="logo" />
-          <a href="/">Subscriber</a>
-        </div>
-        <div className="sidebar__link">
-          <img src={logo} alt="logo" />
-          <a href="/">User</a>
-        </div>
+        {sideBarItem.map((item, index) => (
+          <div key={index} className="sidebar__link active_menu_link">
+            <img src={item.items[0].icon} alt="logo" />
+            <Link to={item.items[0].link}>{item.items[0].name}</Link>
+          </div>
+        ))}
       </div>
     </div>
   );
