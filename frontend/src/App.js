@@ -1,9 +1,14 @@
-function App() {
+import { BrowserRouter } from "react-router-dom";
+import PageRoute from "./routes/PageRoutes";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Dashboard</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <PageRoute />
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;
