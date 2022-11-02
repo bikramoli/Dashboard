@@ -1,3 +1,4 @@
+import "./Style.css";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/svgs/logo.svg";
 import { sideBarItem } from "./SidebarItems";
@@ -14,7 +15,7 @@ const Sidebar = () => {
 
       <div className="sidebar__menu">
         {sideBarItem.map((item, index) => (
-          <div key={index} className="sidebar__link active_menu_link">
+          <div key={index} className="sidebar__link ">
             <img src={item.items[0].icon} alt="logo" />
             <Link to={item.items[0].link}>{item.items[0].name}</Link>
           </div>
