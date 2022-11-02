@@ -1,4 +1,5 @@
 import moment from "moment";
+import "./Style.css";
 import avatar from "../../../assets/svgs/avatar.svg";
 
 const Navbar = () => {
