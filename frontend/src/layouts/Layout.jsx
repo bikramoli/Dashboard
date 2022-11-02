@@ -5,7 +5,7 @@ import WrapperMain from "../components/ui/wrapper/WrapperMain";
 
 const Layout = () => {
   return (
-    <div class="container">
+    <div className="container">
       <Navbar />
       <WrapperMain>
         <Outlet />

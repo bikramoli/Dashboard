@@ -1,0 +1,67 @@
+
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  
+  thead {
+    background-color: var(--main-color);
+    text-align: left;
+  }
+  
+  th,
+  td {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: white;
+  }
+  
+  td {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #f9fafc;
+  }
+  
+  .badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  
+  .badge.success {
+    background: var(--color-success);
+    color: var(--main-color);
+  }
+  
+  .badge.warning {
+    background: var(--color-warning);
+    color: orange;
+  }
+  
+  .td-team {
+    display: flex;
+    align-items: center;
+  }
+  
+  .img-1,
+  .img-2,
+  .img-3 {
+    height: 38px;
+    width: 38px;
+    border-radius: 38px;
+    margin-left: -15px;
+    border: solid 3px #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .table-view-icon {
+    height: 30px;
+    width: 30px;
+  }
+  

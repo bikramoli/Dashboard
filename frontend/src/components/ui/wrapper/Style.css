@@ -3,3 +3,8 @@
 .main__container {
   padding: 20px 35px;
 }
+.activity-card {
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin-top: 16px;
+}
