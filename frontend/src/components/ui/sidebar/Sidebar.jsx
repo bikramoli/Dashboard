@@ -15,7 +15,7 @@ const Sidebar = () => {
 
       <div className="sidebar__menu">
         {sideBarItem.map((item, index) => (
-          <div key={index} className="sidebar__link ">
+          <div key={index} className="sidebar__link active_menu_link">
             <img src={item.items[0].icon} alt="logo" />
             <Link to={item.items[0].link}>{item.items[0].name}</Link>
           </div>
