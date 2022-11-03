@@ -1,9 +1,10 @@
 import "./Style.css";
 import React from "react";
 import CardWrapper from "../wrapper/CardWrapper";
+import Pagination from "../pagination/Pagination";
 
 const Table = (props) => {
-  const { data, columns } = props;
+  const { data, columns, nPages, currentPage, setCurrentPage } = props;
 
   const getCaps = (head, field) => {
     if (head) return head.toUpperCase();
@@ -36,6 +37,11 @@ const Table = (props) => {
           </tbody>
         </table>
       </div>
+      <Pagination
+        nPages={nPages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </CardWrapper>
   );
 };

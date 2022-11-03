@@ -1,4 +1,6 @@
+import { useState } from "react";
 import SearchBox from "../../form/searchBox/SearchBox";
+import Pagination from "../pagination/Pagination";
 import Table from "../table/Table";
 
 const columns = [
@@ -13,6 +15,9 @@ const columns = [
 ];
 
 const SubscriberDetail = () => {
+  // pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recordsPerPage] = useState(10);
   var data = [];
 
   columns?.map((list, index) =>
@@ -31,9 +36,13 @@ const SubscriberDetail = () => {
     <>
       <div class="filters">
         <SearchBox />
-      </div>
-      <div>
-        <Table data={data} columns={columns} />
+        <Table
+          data={data}
+          columns={columns}
+          nPages={10}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
     </>
   );
